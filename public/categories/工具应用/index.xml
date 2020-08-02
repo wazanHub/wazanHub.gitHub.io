@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具应用 on wazanHub</title>
+<<<<<<< HEAD
+    <link>https://wazanhub.github.io/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</link>
+=======
+<<<<<<< HEAD
+    <link>https://wazanhub.github.io/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</link>
+=======
+    <link>http://localhost:1313/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</link>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <description>Recent content in 工具应用 on wazanHub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 27 Jun 2020 12:09:54 +0800</lastBuildDate>
+    
+<<<<<<< HEAD
+	<atom:link href="https://wazanhub.github.io/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+=======
+<<<<<<< HEAD
+	<atom:link href="https://wazanhub.github.io/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+=======
+	<atom:link href="http://localhost:1313/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    
+    
+    <item>
+      <title>npm相关</title>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+      <link>https://wazanhub.github.io/post/npm%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Sat, 27 Jun 2020 12:09:54 +0800</pubDate>
+      
+      <guid>https://wazanhub.github.io/post/npm%E7%9B%B8%E5%85%B3/</guid>
+<<<<<<< HEAD
+=======
+=======
+      <link>http://localhost:1313/post/npm%E7%9B%B8%E5%85%B3/</link>
+      <pubDate>Sat, 27 Jun 2020 12:09:54 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/npm%E7%9B%B8%E5%85%B3/</guid>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+      <description>node.js下的包管理工具
+镜像安装 国内网络环境下载包网速慢的处理
+ 使用淘宝镜像  npm install -g cnpm --registry=https://registry.npm.taobao.org npm指向淘宝镜像
+npm config set registry https://registry.npm.taobao.org/ //淘宝源 npm config set registry https://registry.npmjs.org/ //改回原始源 npm config get registry //配置后可通过下面方式验证是否成功 包安装 本地安装与全局安装 全局安装一般用于框架工具类的安装，如vue、 webpack等
+ 将安装包放在 /usr/local 下 可以直接在命令行里使用  npm i webpack -g 本地安装一般用于项目依赖的安装，分为安装到开发环境、生产环境
+ 将安装包放在 ./node_modules 下（运行npm时所在的目录） 可以通过 require() 来引入本地安装的包  // 安装到开发环境,写入到 devDependencies 对象 npm i jquery --save-dev npm i jquery -D //安装到生产环境,写入到 dependencies 对象 npm i jquery npm i jquery --save npm i jquery -S </description>
+    </item>
+    
+    <item>
+      <title>webpack简单入门</title>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+      <link>https://wazanhub.github.io/post/webpack/</link>
+      <pubDate>Sat, 27 Jun 2020 11:43:48 +0800</pubDate>
+      
+      <guid>https://wazanhub.github.io/post/webpack/</guid>
+      <description>使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&amp;gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+<<<<<<< HEAD
+=======
+=======
+      <link>http://localhost:1313/post/webpack/</link>
+      <pubDate>Sat, 27 Jun 2020 11:43:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/webpack/</guid>
+      <description>使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&amp;gt;webpack.config.js // 配置文件 webpack基础配置 配置入口 webpack.config.js里配置文件
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+entry: { app1:path.join(__dirname, &#39;src/js/app1.js&#39;), app2:path.join(__dirname, &#39;src/js/app2.js&#39;) }, output: { path: path.join(__dirname, &#39;dist&#39;), filename: &#39;[name].bundle.js?[hash:5]&#39; }, module:{}, plugins:[] 开发环境部署服务 安装webpack-dev-server
+npm i webpack-dev-server -D 配置启动命令
+法一：package.json文件里配置
+&amp;quot;dev&amp;quot;: &amp;quot;webpack-dev-server --open --port 3000 --contentBase src --hot&amp;quot;, 法二：在webpack.config.js里配置
+devServer: { contentBase: &#39;src&#39;, // 指定托管的根目录 inline: true, // 自动刷新 hot: true, // 启动热更新 port: 5000, // 设置启动的时候的运行端口 open: true // 自动打开开浏览器 } webpack.</description>
+    </item>
+    
+    <item>
+      <title>Sass</title>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+      <link>https://wazanhub.github.io/post/sass/</link>
+      <pubDate>Sat, 27 Jun 2020 11:32:07 +0800</pubDate>
+      
+      <guid>https://wazanhub.github.io/post/sass/</guid>
+<<<<<<< HEAD
+=======
+=======
+      <link>http://localhost:1313/post/sass/</link>
+      <pubDate>Sat, 27 Jun 2020 11:32:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/sass/</guid>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+      <description>sass</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>webpack简单入门 - wazanHub</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<<<<<<< HEAD
+<meta name="author" content="wazan" /><meta name="description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&amp;gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+=======
+<<<<<<< HEAD
+<meta name="author" content="wazan" /><meta name="description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&amp;gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+=======
+<meta name="author" content="wazan" /><meta name="description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&amp;gt;webpack.config.js // 配置文件 webpack基础配置 配置入口 webpack.config.js里配置文件
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+entry: { app1:path.join(__dirname, &#39;src/js/app1.js&#39;), app2:path.join(__dirname, &#39;src/js/app2.js&#39;) }, output: { path: path.join(__dirname, &#39;dist&#39;), filename: &#39;[name].bundle.js?[hash:5]&#39; }, module:{}, plugins:[] 开发环境部署服务 安装webpack-dev-server
+npm i webpack-dev-server -D 配置启动命令
+法一：package.json文件里配置
+&amp;quot;dev&amp;quot;: &amp;quot;webpack-dev-server --open --port 3000 --contentBase src --hot&amp;quot;, 法二：在webpack.config.js里配置
+devServer: { contentBase: &#39;src&#39;, // 指定托管的根目录 inline: true, // 自动刷新 hot: true, // 启动热更新 port: 5000, // 设置启动的时候的运行端口 open: true // 自动打开开浏览器 } webpack." /><meta name="keywords" content="wazan, study" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.71.1 with theme even" />
+
+
+<<<<<<< HEAD
+<link rel="canonical" href="https://wazanhub.github.io/post/webpack/" />
+=======
+<<<<<<< HEAD
+<link rel="canonical" href="https://wazanhub.github.io/post/webpack/" />
+=======
+<link rel="canonical" href="http://localhost:1313/post/webpack/" />
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b70575932d58f00331c6aacffef9d6f69bd146e84ff98ee769622d3439951b79.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="webpack简单入门" />
+<<<<<<< HEAD
+<meta property="og:description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+=======
+<<<<<<< HEAD
+<meta property="og:description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+=======
+<meta property="og:description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&gt;webpack.config.js // 配置文件 webpack基础配置 配置入口 webpack.config.js里配置文件
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+entry: { app1:path.join(__dirname, &#39;src/js/app1.js&#39;), app2:path.join(__dirname, &#39;src/js/app2.js&#39;) }, output: { path: path.join(__dirname, &#39;dist&#39;), filename: &#39;[name].bundle.js?[hash:5]&#39; }, module:{}, plugins:[] 开发环境部署服务 安装webpack-dev-server
+npm i webpack-dev-server -D 配置启动命令
+法一：package.json文件里配置
+&quot;dev&quot;: &quot;webpack-dev-server --open --port 3000 --contentBase src --hot&quot;, 法二：在webpack.config.js里配置
+devServer: { contentBase: &#39;src&#39;, // 指定托管的根目录 inline: true, // 自动刷新 hot: true, // 启动热更新 port: 5000, // 设置启动的时候的运行端口 open: true // 自动打开开浏览器 } webpack." />
+<meta property="og:type" content="article" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+<meta property="og:url" content="https://wazanhub.github.io/post/webpack/" />
+<meta property="article:published_time" content="2020-06-27T11:43:48+08:00" />
+<meta property="article:modified_time" content="2020-06-27T11:43:48+08:00" />
+<meta itemprop="name" content="webpack简单入门">
+<meta itemprop="description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+<<<<<<< HEAD
+=======
+=======
+<meta property="og:url" content="http://localhost:1313/post/webpack/" />
+<meta property="article:published_time" content="2020-06-27T11:43:48+08:00" />
+<meta property="article:modified_time" content="2020-06-27T11:43:48+08:00" />
+<meta itemprop="name" content="webpack简单入门">
+<meta itemprop="description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&gt;webpack.config.js // 配置文件 webpack基础配置 配置入口 webpack.config.js里配置文件
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+entry: { app1:path.join(__dirname, &#39;src/js/app1.js&#39;), app2:path.join(__dirname, &#39;src/js/app2.js&#39;) }, output: { path: path.join(__dirname, &#39;dist&#39;), filename: &#39;[name].bundle.js?[hash:5]&#39; }, module:{}, plugins:[] 开发环境部署服务 安装webpack-dev-server
+npm i webpack-dev-server -D 配置启动命令
+法一：package.json文件里配置
+&quot;dev&quot;: &quot;webpack-dev-server --open --port 3000 --contentBase src --hot&quot;, 法二：在webpack.config.js里配置
+devServer: { contentBase: &#39;src&#39;, // 指定托管的根目录 inline: true, // 自动刷新 hot: true, // 启动热更新 port: 5000, // 设置启动的时候的运行端口 open: true // 自动打开开浏览器 } webpack.">
+<meta itemprop="datePublished" content="2020-06-27T11:43:48&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-27T11:43:48&#43;08:00" />
+<<<<<<< HEAD
+<meta itemprop="wordCount" content="364">
+=======
+<<<<<<< HEAD
+<meta itemprop="wordCount" content="364">
+=======
+<meta itemprop="wordCount" content="368">
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+
+
+
+<meta itemprop="keywords" content="webpack," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="webpack简单入门"/>
+<<<<<<< HEAD
+<meta name="twitter:description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+=======
+<<<<<<< HEAD
+<meta name="twitter:description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+=======
+<meta name="twitter:description" content="使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&gt;webpack.config.js // 配置文件 webpack基础配置 配置入口 webpack.config.js里配置文件
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+entry: { app1:path.join(__dirname, &#39;src/js/app1.js&#39;), app2:path.join(__dirname, &#39;src/js/app2.js&#39;) }, output: { path: path.join(__dirname, &#39;dist&#39;), filename: &#39;[name].bundle.js?[hash:5]&#39; }, module:{}, plugins:[] 开发环境部署服务 安装webpack-dev-server
+npm i webpack-dev-server -D 配置启动命令
+法一：package.json文件里配置
+&quot;dev&quot;: &quot;webpack-dev-server --open --port 3000 --contentBase src --hot&quot;, 法二：在webpack.config.js里配置
+devServer: { contentBase: &#39;src&#39;, // 指定托管的根目录 inline: true, // 自动刷新 hot: true, // 启动热更新 port: 5000, // 设置启动的时候的运行端口 open: true // 自动打开开浏览器 } webpack."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">wazanHub</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">wazanHub</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">webpack简单入门</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-06-27 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/"> 工具应用 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#使用webpack的好处">使用webpack的好处</a></li>
+    <li><a href="#目录构建">目录构建</a></li>
+<<<<<<< HEAD
+    <li><a href="#webpack配置">webpack配置</a>
+=======
+<<<<<<< HEAD
+    <li><a href="#webpack配置">webpack配置</a>
+=======
+    <li><a href="#webpack基础配置">webpack基础配置</a>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+      <ul>
+        <li><a href="#配置入口">配置入口</a></li>
+        <li><a href="#开发环境部署服务">开发环境部署服务</a></li>
+        <li><a href="#webpackconfigjs">webpack.config.js</a></li>
+        <li><a href="#开发环境下的预览">开发环境下的预览</a></li>
+<<<<<<< HEAD
+        <li><a href="#加载非js的文件">加载非js的文件</a></li>
+=======
+<<<<<<< HEAD
+        <li><a href="#加载非js的文件">加载非js的文件</a></li>
+=======
+      </ul>
+    </li>
+    <li><a href="#处理资源文件">处理资源文件</a>
+      <ul>
+        <li><a href="#css文件">css文件</a></li>
+        <li><a href="#加载图片">加载图片</a></li>
+        <li><a href="#加载sass文件">加载sass文件</a></li>
+        <li><a href="#处理es6语法的文件">处理ES6语法的文件</a></li>
+        <li><a href="#处理css前缀">处理css前缀</a></li>
+      </ul>
+    </li>
+    <li><a href="#生成html页面文件">生成html页面文件</a>
+      <ul>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+        <li><a href="#webpack-html-plugin插件">webpack-html-plugin插件</a></li>
+        <li><a href="#按照模板生成不同的html">按照模板生成不同的html</a></li>
+        <li><a href="#给生成的不同的html指定不同的css文件">给生成的不同的html指定不同的css文件</a></li>
+        <li><a href="#其他插件">其他插件</a></li>
+        <li><a href="#publicpath">publicPath</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="使用webpack的好处">使用webpack的好处</h2>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="目录构建">目录构建</h2>
+<pre><code>webpack init -y // 初始化
+
+npm i webpack -D // 开发环境安装webpack
+
+mkdir src //创建相关开发目录及入口文件
+
+.&gt;webpack.config.js // 配置文件
+</code></pre><p><img src="https://user-gold-cdn.xitu.io/2020/6/27/172f60269691336e?w=135&amp;h=307&amp;f=png&amp;s=8533" alt=""></p>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<<<<<<< HEAD
+<h2 id="webpack配置">webpack配置</h2>
+=======
+<<<<<<< HEAD
+<h2 id="webpack配置">webpack配置</h2>
+=======
+<h2 id="webpack基础配置">webpack基础配置</h2>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+<h3 id="配置入口">配置入口</h3>
+<p>webpack.config.js里配置文件</p>
+<pre><code>entry: {
+    
+    app1:path.join(__dirname, 'src/js/app1.js'),
+
+    app2:path.join(__dirname, 'src/js/app2.js')
+
+},
+
+output: {
+    
+    path: path.join(__dirname, 'dist'),
+    
+    filename: '[name].bundle.js?[hash:5]'
+
+},
+
+module:{},
+
+plugins:[]
+</code></pre><p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="开发环境部署服务">开发环境部署服务</h3>
+<p>安装webpack-dev-server</p>
+<pre><code>npm i webpack-dev-server -D 
+</code></pre><p>配置启动命令</p>
+<p><strong>法一</strong>：package.json文件里配置</p>
+<pre><code>&quot;dev&quot;: &quot;webpack-dev-server --open --port 3000 --contentBase src --hot&quot;,
+</code></pre><p><strong>法二</strong>：在webpack.config.js里配置</p>
+<pre><code>devServer: {
+
+    contentBase: 'src', // 指定托管的根目录
+    
+    inline: true, // 自动刷新
+    
+    hot: true, // 启动热更新
+    
+    port: 5000, // 设置启动的时候的运行端口
+    
+    open: true // 自动打开开浏览器
+
+}
+</code></pre><p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="webpackconfigjs">webpack.config.js</h3>
+<p><code>当我们在控制台，直接输入 webpack命令执行的时候，webpack做了以下操作</code></p>
+<ol>
+<li>首先webpack发现，我们并没有通过命令的形式，给它指定入口和出口</li>
+<li>webpack就会去项目的根目录去查找一个叫&rsquo;webpack.config.js&rsquo;的配置文件</li>
+<li>当发现配置文件后，webpack会去解析执行这个配置文件，当解析执行完成配置文件后，就得到配置文件中导出的对象</li>
+<li>当webpack拿到配置对象后，就得到了配置文件中指定的入口和出口，然后进行构建打包</li>
+</ol>
+<p><code>使用 webpack-dev-server 这个工具，来实现自动打包编译的功能</code></p>
+<ol>
+<li>npm i webpack-dev-server -D</li>
+<li>webpack这个工具正常运行必须在本地项目中安装webpack</li>
+<li>webpack-dev-server 帮我们打包生成的 bundle.js 文件，并没有存放在实际的物理磁盘上，而是
+直接托管到电脑的内存中(快)，所以，我们在项目根目录中，根本找不到这个打包好的bundle.js；</li>
+<li>我们可以认为，webpack-dev-server 把打包好的文件，以一种虚拟的形式，托管到了项目的根目录中，虽然我们看不到它，但是可以认为
+和dist src平级，有一个看不见的文件bundle.js</li>
+</ol>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="开发环境下的预览">开发环境下的预览</h3>
+<p>刚开始npm run dev, 需要在src下新建文件index.html, 同时引入开发环境下打包生成的js<br>
+现在我们期望以已有的index.html作为模板，生成自动引入js的index.html（生成的index.html src不可见,dist下可见）</p>
+<ol>
+<li>导入生成的 html 页面的插件</li>
+</ol>
+<pre><code>npm i html-webpack-plugin -D
+</code></pre><p>2.webpack.config.js里配置下这个插件</p>
+<pre><code>// 作用：
+
+// 1. 自动在内存中根据指定页面生成一个内存的页面
+
+// 2. 自动把打包好的 bundle.js 追加到页面中去
+
+const webpack = require(&quot;webpack&quot;);
+
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+// 配置插件的节点
+
+plugins: [ //是个数组
+
+    // 创建一个在内存(物理磁盘)中生成的html页面的插件
+
+    new HtmlWebpackPlugin({
+
+        title: 'index',
+
+        template: path.join(__dirname,'./src/index.html'),// 指定模板页面，将来会根据指定的页面路径，去生成内存（物理）中的页面
+        
+        hash: false,//hash选项的作用是 给生成的 js 文件一个独特的 hash 值,也可以设置为false，在上面的output的js文件尾加?[hash:8]
+        
+        filename: 'index.html',//开发环境（内存中）和生产环境的index.html都被替换
+        
+        // favicon: 'path/to/yourfile.ico',//网页图标
+    
+    })
+
+]
+</code></pre><p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+<h3 id="加载非js的文件">加载非js的文件</h3>
+<p>webpack都是打包成js文件的，里面包含css，image等，此时需要安装配置相应的加载器</p>
+<ul>
+<li>加载css样式文件</li>
+</ul>
+<<<<<<< HEAD
+=======
+=======
+<h2 id="处理资源文件">处理资源文件</h2>
+<p>加载非js的文件
+webpack都是打包成js文件的，里面包含css，image等，此时需要安装配置相应的加载器</p>
+<h3 id="css文件">css文件</h3>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+<p>js引入css文件</p>
+<pre><code>import '../css/style.css'
+</code></pre><p>安装css-loader style-loader</p>
+<pre><code>npm i style-loader css-loader -D
+</code></pre><p>webpack.config.js里配置</p>
+<pre><code>module: {
+    rules: [
+        {
+            test: /\.css$/,
+            use: [
+                'style-loader',// 可以把css放在页面上
+                'css-loader'// 放在后面的先被解析
+            ]
+        }
+    ]
+},
+</code></pre><p>css间的相互引用</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">@<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;globals&#34;</span>;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+</code></pre></div><ul>
+<li>
+<p>加载图片<br>
+引入file-loader</p>
+</li>
+<li>
+<p>加载sass文件</p>
+</li>
+</ul>
+<<<<<<< HEAD
+=======
+=======
+</code></pre></div><h3 id="加载图片">加载图片</h3>
+<p>引入file-loader</p>
+<h3 id="加载sass文件">加载sass文件</h3>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+<pre><code>npm i sass-loader -D
+</code></pre><pre><code>{
+    test: /\.scss$/,
+    use: [
+        'style-loader',
+        'css-loader',
+        'sass-loader'
+    ]
+}
+<<<<<<< HEAD
+</code></pre><p><code>注意</code>
+直接运行会报错，提示 Cannot find module &lsquo;node-sass&rsquo;,<br>
+这里要使用cnpm安装node-sass，不然npm安装一般失败</p>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+=======
+<<<<<<< HEAD
+</code></pre><p><code>注意</code>
+直接运行会报错，提示 Cannot find module &lsquo;node-sass&rsquo;,<br>
+这里要使用cnpm安装node-sass，不然npm安装一般失败</p>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+=======
+
+</code></pre><p><code>注意</code>
+直接运行会报错，提示 Cannot find module &lsquo;node-sass&rsquo;,<br>
+这里要使用cnpm安装node-sass，不然npm安装一般失败</p>
+<h3 id="处理es6语法的文件">处理ES6语法的文件</h3>
+<h3 id="处理css前缀">处理css前缀</h3>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="生成html页面文件">生成html页面文件</h2>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+<h3 id="webpack-html-plugin插件">webpack-html-plugin插件</h3>
+<p>可携带参数给生成的html文件</p>
+<pre><code>new HtmlWebpackPlugin({
+    
+    title: 'index',
+    
+    template: path.join(__dirname,'./src/index.html'),// 指定模板页面，将来会根据指定的页面路径，去生成内存（物理）中的页面
+    
+    hash: false,//hash选项的作用是 给生成的 js 文件一个独特的 hash 值,也可以设置为false，在上面的output的js文件尾加?[hash:8]
+    
+    filename: 'index.html',//开发环境（内存中）和生产环境的index.html都被替换
+    
+    // favicon: 'path/to/yourfile.ico',//网页图标
+    data:'1232',
+    
+    date: new Date(),
+    
+    minify:{
+        
+        removeComments:true,// 删除注释
+        
+        collapseWhitespace:true // 删除空格
+    }
+
+}),
+</code></pre><p>src下的index.html模板</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt; &lt;%= htmlWebpackPlugin.options.title %&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;%= htmlWebpackPlugin.options.data %&gt;
+        &lt;!-- 注释 --&gt;
+        &lt;% for(var key in htmlWebpackPlugin.files) {%&gt;
+            &lt;%= key %&gt; : &lt;%= JSON.stringify(htmlWebpackPlugin.files[key])%&gt;
+        &lt;% } %&gt;    
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="按照模板生成不同的html">按照模板生成不同的html</h3>
+<p>生成不同的html的同时，给不同的html指定需要加载的js
+<<<<<<< HEAD
+在本地服务器托管的目录下和最后打包的dist下  生成的html指定需要的js
+=======
+<<<<<<< HEAD
+在本地服务器托管的目录下和最后打包的dist下  生成的html指定需要的js
+=======
+在本地服务器托管的目录下和最后打包的dist下  生成的html指定需要的js<br>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+webpack.config.js</p>
+<pre><code>new HtmlWebpackPlugin({
+    
+    template: path.join(__dirname,'./src/index.html'),// 指定模板页面，将来会根据指定的页面路径，去生成内存（物理）中的页面
+    
+    filename: 'index.html',//开发环境（内存中）和生产环境的index.html都被替换
+    
+    chunks:['app1'] //为index.html指定加载app1.bundle.js,    这里是个数组，可以是多个js
+
+}),
+new HtmlWebpackPlugin({
+    
+    template: path.join(__dirname,'./src/index.html'),// 指定模板页面，将来会根据指定的页面路径，去生成内存（物理）中的页面
+    
+    filename: 'index2.html',//开发环境（内存中）和生产环境的index.html都被替换
+    
+    chunks:['app2'] //为index2.html指定加载app1.bundle.js
+
+})
+</code></pre><p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="给生成的不同的html指定不同的css文件">给生成的不同的html指定不同的css文件</h3>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="其他插件">其他插件</h3>
+<ul>
+<li>clean-webpack-plugin<br>
+执行npm run dev时会清空dist</li>
+</ul>
+<pre><code>const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+plugins: [ //是个数组
+    
+    new CleanWebpackPlugin(),//新的文档用法,  当npm run dev时会清空build
+
+]
+</code></pre><p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="publicpath">publicPath</h3>
+<p>如果在output里配置publicPath(用于生成js上线的地址)</p>
+<pre><code>    output: {
+
+        path: path.join(__dirname, 'dist'),
+        
+        filename: '[name].bundle.js?[hash:10]',
+        
+        publicPath: 'http://cdn.com/' //设置生成的js文件的地址目录
+    
+    },
+</code></pre><p>生成的html文件里会自动替换</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://cdn.com/app1.bundle.js?157377155c&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+    &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://cdn.com/app2.bundle.js?157377155c&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+
+</code></pre></div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">wazan</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-06-27
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/webpack/">webpack</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/npm%E7%9B%B8%E5%85%B3/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">npm相关</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/sass/">
+            <span class="next-text nav-default">Sass</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+<<<<<<< HEAD
+  <a href="https://wazanhub.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+=======
+<<<<<<< HEAD
+  <a href="https://wazanhub.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+=======
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wazan</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

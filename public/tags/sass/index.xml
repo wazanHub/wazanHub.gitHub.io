@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sass on wazanHub</title>
+<<<<<<< HEAD
+    <link>https://wazanhub.github.io/tags/sass/</link>
+=======
+<<<<<<< HEAD
+    <link>https://wazanhub.github.io/tags/sass/</link>
+=======
+    <link>http://localhost:1313/tags/sass/</link>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <description>Recent content in sass on wazanHub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 27 Jun 2020 11:32:07 +0800</lastBuildDate>
+    
+<<<<<<< HEAD
+	<atom:link href="https://wazanhub.github.io/tags/sass/index.xml" rel="self" type="application/rss+xml" />
+=======
+<<<<<<< HEAD
+	<atom:link href="https://wazanhub.github.io/tags/sass/index.xml" rel="self" type="application/rss+xml" />
+=======
+	<atom:link href="http://localhost:1313/tags/sass/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    
+    
+    <item>
+      <title>Sass</title>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+      <link>https://wazanhub.github.io/post/sass/</link>
+      <pubDate>Sat, 27 Jun 2020 11:32:07 +0800</pubDate>
+      
+      <guid>https://wazanhub.github.io/post/sass/</guid>
+<<<<<<< HEAD
+=======
+=======
+      <link>http://localhost:1313/post/sass/</link>
+      <pubDate>Sat, 27 Jun 2020 11:32:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/sass/</guid>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+      <description>sass</description>
+    </item>
+    
+  </channel>
+</rss>

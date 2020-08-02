@@ -1,0 +1,556 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+<?xml-stylesheet type="text/xsl" href="https://wazanhub.github.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://wazanhub.github.io/categories/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+<<<<<<< HEAD
+=======
+=======
+<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2020-06-30T13:59:25+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/npm/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/npm/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2020-06-30T13:59:25+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/npm%E7%9B%B8%E5%85%B3/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/npm%E7%9B%B8%E5%85%B3/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2020-06-30T13:59:25+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/tags/vue/</loc>
+    <lastmod>2020-06-30T13:59:25+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/post/vue%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-06-30T13:59:25+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2020-06-30T13:59:25+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-06-30T13:59:25+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/webpack/</loc>
+    <lastmod>2020-06-27T11:43:48+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/webpack/</loc>
+    <lastmod>2020-06-27T11:43:48+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/categories/js/</loc>
+    <lastmod>2020-06-29T14:48:00+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/webpack/</loc>
+    <lastmod>2020-06-27T11:43:48+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/webpack/</loc>
+    <lastmod>2020-06-27T11:43:48+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2020-06-29T14:48:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%90%86%E8%A7%A3/</loc>
+    <lastmod>2020-06-29T14:48:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/bug/</loc>
+    <lastmod>2020-06-29T14:28:13+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/sass/</loc>
+    <lastmod>2020-06-27T11:32:07+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/sass/</loc>
+    <lastmod>2020-06-27T11:32:07+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/categories/bug/</loc>
+    <lastmod>2020-06-29T14:28:13+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/sass/</loc>
+    <lastmod>2020-06-27T11:32:07+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/sass/</loc>
+    <lastmod>2020-06-27T11:32:07+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/post/%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84bug/</loc>
+    <lastmod>2020-06-29T14:28:13+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/vue-cli/</loc>
+    <lastmod>2020-06-08T12:26:06+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/vue-cli/</loc>
+    <lastmod>2020-06-08T12:26:06+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/tags/npm/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</loc>
+=======
+    <loc>http://localhost:1313/post/npm%E7%9B%B8%E5%85%B3/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/categories/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2020-06-27T12:09:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/webpack/</loc>
+    <lastmod>2020-06-27T11:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/webpack/</loc>
+    <lastmod>2020-06-27T11:43:48+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/sass/</loc>
+    <lastmod>2020-06-27T11:32:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/sass/</loc>
+    <lastmod>2020-06-27T11:32:07+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/vue-cli/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T12:26:06+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/es6/</loc>
+    <lastmod>2020-06-08T12:18:28+08:00</lastmod>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/es6/</loc>
+    <lastmod>2020-06-08T12:18:28+08:00</lastmod>
+=======
+    <loc>http://localhost:1313/post/%E5%B7%A5%E5%85%B7%E5%BA%94%E7%94%A8/</loc>
+    <lastmod>2020-06-08T12:26:06+08:00</lastmod>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/es6%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/es6%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+=======
+    <loc>http://localhost:1313/post/es6/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T12:18:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/js/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/js/</loc>
+=======
+    <loc>http://localhost:1313/tags/es6%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T12:18:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/js%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/js%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+=======
+    <loc>http://localhost:1313/tags/js%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T12:01:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/js%E7%94%A8%E7%82%B9/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/js%E7%94%A8%E7%82%B9/</loc>
+=======
+    <loc>http://localhost:1313/post/js%E7%94%A8%E7%82%B9/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T12:01:50+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/css/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/css/</loc>
+=======
+    <loc>http://localhost:1313/categories/css/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T12:01:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/css%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/css%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+=======
+    <loc>http://localhost:1313/tags/css%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T12:01:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/css%E7%94%A8%E7%82%B9/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/css%E7%94%A8%E7%82%B9/</loc>
+=======
+    <loc>http://localhost:1313/post/css%E7%94%A8%E7%82%B9/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T12:01:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/vshop/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/vshop/</loc>
+=======
+    <loc>http://localhost:1313/post/vshop/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T11:56:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/vue/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/vue/</loc>
+=======
+    <loc>http://localhost:1313/categories/vue/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T11:56:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/</loc>
+=======
+    <loc>http://localhost:1313/tags/%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T11:56:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/v-chat/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/v-chat/</loc>
+=======
+    <loc>http://localhost:1313/post/v-chat/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-08T11:49:28+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/</loc>
+=======
+    <loc>http://localhost:1313/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-02T22:58:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/js-sum/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/post/js-sum/</loc>
+=======
+    <loc>http://localhost:1313/post/js%E6%B7%B1%E5%85%A5/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-02T22:58:09+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/about/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/about/</loc>
+=======
+    <loc>http://localhost:1313/about/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-06-02T22:46:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/categories/</loc>
+=======
+    <loc>http://localhost:1313/categories/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-05-31T22:36:11+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/tags/</loc>
+=======
+    <loc>http://localhost:1313/tags/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-05-31T22:35:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/archives/</loc>
+=======
+<<<<<<< HEAD
+    <loc>https://wazanhub.github.io/archives/</loc>
+=======
+    <loc>http://localhost:1313/archives/</loc>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <lastmod>2020-05-31T22:35:40+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+</urlset>

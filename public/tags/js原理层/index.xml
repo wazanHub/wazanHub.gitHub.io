@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>js原理层 on wazanHub</title>
+<<<<<<< HEAD
+    <link>https://wazanhub.github.io/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/</link>
+=======
+<<<<<<< HEAD
+    <link>https://wazanhub.github.io/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/</link>
+=======
+    <link>http://localhost:1313/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/</link>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <description>Recent content in js原理层 on wazanHub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 02 Jun 2020 22:58:09 +0800</lastBuildDate>
+    
+<<<<<<< HEAD
+	<atom:link href="https://wazanhub.github.io/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/index.xml" rel="self" type="application/rss+xml" />
+=======
+<<<<<<< HEAD
+	<atom:link href="https://wazanhub.github.io/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/index.xml" rel="self" type="application/rss+xml" />
+=======
+	<atom:link href="http://localhost:1313/tags/js%E5%8E%9F%E7%90%86%E5%B1%82/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    
+    
+    <item>
+      <title>JS深入系列</title>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+      <link>https://wazanhub.github.io/post/js-sum/</link>
+      <pubDate>Tue, 02 Jun 2020 22:58:09 +0800</pubDate>
+      
+      <guid>https://wazanhub.github.io/post/js-sum/</guid>
+<<<<<<< HEAD
+=======
+=======
+      <link>http://localhost:1313/post/js%E6%B7%B1%E5%85%A5/</link>
+      <pubDate>Tue, 02 Jun 2020 22:58:09 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E6%B7%B1%E5%85%A5/</guid>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+      <description>type 和 instanceof typeof 基本类型和引用类型
+   类型 值     Undefined &amp;ldquo;undefined&amp;rdquo;   Null &amp;ldquo;object&amp;rdquo; (历史遗留问题)   Boolean &amp;ldquo;boolean&amp;rdquo;   Number &amp;ldquo;number&amp;rdquo;   String &amp;ldquo;string&amp;rdquo;   Object Array &amp;ldquo;object&amp;rdquo;    instanceof 运算符用来测试一个对象在其原型链中是否存在一个构造函数的 prototype 属性。
+使用两者结合封装函数来判断类型
+function getDataType(obj) { if(obj === null){ return &amp;quot;null&amp;quot;; }else if(typeof obj === &amp;quot;object&amp;quot;){ if(obj instanceof Array){ return &amp;quot;array&amp;quot;; }else{ return &amp;quot;object&amp;quot;; } }else{ return typeof obj; } } 原型 在典型的oop（面向对象编程）的语言中，如java,都存在类的概念，类就是对象的模板，对象就是类的实例。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vue on wazanHub</title>
+    <link>http://localhost:1313/tags/vue/</link>
+    <description>Recent content in vue on wazanHub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 30 Jun 2020 13:59:25 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/vue/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vue学习</title>
+      <link>http://localhost:1313/post/vue%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Tue, 30 Jun 2020 13:59:25 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/vue%E5%AD%A6%E4%B9%A0/</guid>
+      <description>vue父子通信 tabbar案例 底部导航组件封装包括 &amp;lt;Tabbar&amp;gt;(父)、&amp;lt;Item&amp;gt;(子)
+需求：
+点击导航组件里代表每个模块的按钮使上方展示不同模块的内容
+步骤：
+1.在App.vue里注册 Tabbar组件和各个页面组件,
+&amp;lt;script&amp;gt; import Tabbar from &#39;./components/comm/tabbar/Tabbar&#39; import Home from &#39;./views/Home&#39; import News from &#39;./views/News&#39; import Myself from &#39;./views/Myself&#39; export default { components:{ Tabbar, Home, News, Myself } } &amp;lt;/script&amp;gt; 2.新建Tabbar.vue和Item.vue
+Tabbar.vue
+Tabbar里注册Item组件，通过:属性名向Item组件传递需要的数据（item的下标文案txt、激活图标、未激活图标）
+&amp;lt;template&amp;gt; &amp;lt;div class=&amp;quot;tabberWarp&amp;quot; &amp;gt; &amp;lt;div class=&amp;quot;warp&amp;quot;&amp;gt; &amp;lt;Item :txt=&#39;item.txt&#39; :page=&#39;item.page&#39; @change=&#39;getVal&#39; v-for=&#39;item in tabbarDes&#39; :sel=&#39;selected&#39; :key=&amp;quot;item.index&amp;quot;&amp;gt; &amp;lt;img :src=&amp;quot;item.normalImg&amp;quot; slot=&#39;normalImg&#39;&amp;gt; &amp;lt;img :src=&amp;quot;item.activeImg&amp;quot; slot=&#39;activeImg&#39;&amp;gt; &amp;lt;/Item&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; import Item from &#39;.</description>
+    </item>
+    
+  </channel>
+</rss>

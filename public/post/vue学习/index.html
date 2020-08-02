@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vue学习 - wazanHub</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="wazan" /><meta name="description" content="vue父子通信 tabbar案例 底部导航组件封装包括 &amp;lt;Tabbar&amp;gt;(父)、&amp;lt;Item&amp;gt;(子)
+需求：
+点击导航组件里代表每个模块的按钮使上方展示不同模块的内容
+步骤：
+1.在App.vue里注册 Tabbar组件和各个页面组件,
+&amp;lt;script&amp;gt; import Tabbar from &#39;./components/comm/tabbar/Tabbar&#39; import Home from &#39;./views/Home&#39; import News from &#39;./views/News&#39; import Myself from &#39;./views/Myself&#39; export default { components:{ Tabbar, Home, News, Myself } } &amp;lt;/script&amp;gt; 2.新建Tabbar.vue和Item.vue
+Tabbar.vue
+Tabbar里注册Item组件，通过:属性名向Item组件传递需要的数据（item的下标文案txt、激活图标、未激活图标）
+&amp;lt;template&amp;gt; &amp;lt;div class=&amp;quot;tabberWarp&amp;quot; &amp;gt; &amp;lt;div class=&amp;quot;warp&amp;quot;&amp;gt; &amp;lt;Item :txt=&#39;item.txt&#39; :page=&#39;item.page&#39; @change=&#39;getVal&#39; v-for=&#39;item in tabbarDes&#39; :sel=&#39;selected&#39; :key=&amp;quot;item.index&amp;quot;&amp;gt; &amp;lt;img :src=&amp;quot;item.normalImg&amp;quot; slot=&#39;normalImg&#39;&amp;gt; &amp;lt;img :src=&amp;quot;item.activeImg&amp;quot; slot=&#39;activeImg&#39;&amp;gt; &amp;lt;/Item&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; import Item from &#39;." /><meta name="keywords" content="wazan, study" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.71.1 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/vue%E5%AD%A6%E4%B9%A0/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b70575932d58f00331c6aacffef9d6f69bd146e84ff98ee769622d3439951b79.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Vue学习" />
+<meta property="og:description" content="vue父子通信 tabbar案例 底部导航组件封装包括 &lt;Tabbar&gt;(父)、&lt;Item&gt;(子)
+需求：
+点击导航组件里代表每个模块的按钮使上方展示不同模块的内容
+步骤：
+1.在App.vue里注册 Tabbar组件和各个页面组件,
+&lt;script&gt; import Tabbar from &#39;./components/comm/tabbar/Tabbar&#39; import Home from &#39;./views/Home&#39; import News from &#39;./views/News&#39; import Myself from &#39;./views/Myself&#39; export default { components:{ Tabbar, Home, News, Myself } } &lt;/script&gt; 2.新建Tabbar.vue和Item.vue
+Tabbar.vue
+Tabbar里注册Item组件，通过:属性名向Item组件传递需要的数据（item的下标文案txt、激活图标、未激活图标）
+&lt;template&gt; &lt;div class=&quot;tabberWarp&quot; &gt; &lt;div class=&quot;warp&quot;&gt; &lt;Item :txt=&#39;item.txt&#39; :page=&#39;item.page&#39; @change=&#39;getVal&#39; v-for=&#39;item in tabbarDes&#39; :sel=&#39;selected&#39; :key=&quot;item.index&quot;&gt; &lt;img :src=&quot;item.normalImg&quot; slot=&#39;normalImg&#39;&gt; &lt;img :src=&quot;item.activeImg&quot; slot=&#39;activeImg&#39;&gt; &lt;/Item&gt; &lt;/div&gt; &lt;/div&gt; &lt;/template&gt; &lt;script type=&quot;text/javascript&quot;&gt; import Item from &#39;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/vue%E5%AD%A6%E4%B9%A0/" />
+<meta property="article:published_time" content="2020-06-30T13:59:25+08:00" />
+<meta property="article:modified_time" content="2020-06-30T13:59:25+08:00" />
+<meta itemprop="name" content="Vue学习">
+<meta itemprop="description" content="vue父子通信 tabbar案例 底部导航组件封装包括 &lt;Tabbar&gt;(父)、&lt;Item&gt;(子)
+需求：
+点击导航组件里代表每个模块的按钮使上方展示不同模块的内容
+步骤：
+1.在App.vue里注册 Tabbar组件和各个页面组件,
+&lt;script&gt; import Tabbar from &#39;./components/comm/tabbar/Tabbar&#39; import Home from &#39;./views/Home&#39; import News from &#39;./views/News&#39; import Myself from &#39;./views/Myself&#39; export default { components:{ Tabbar, Home, News, Myself } } &lt;/script&gt; 2.新建Tabbar.vue和Item.vue
+Tabbar.vue
+Tabbar里注册Item组件，通过:属性名向Item组件传递需要的数据（item的下标文案txt、激活图标、未激活图标）
+&lt;template&gt; &lt;div class=&quot;tabberWarp&quot; &gt; &lt;div class=&quot;warp&quot;&gt; &lt;Item :txt=&#39;item.txt&#39; :page=&#39;item.page&#39; @change=&#39;getVal&#39; v-for=&#39;item in tabbarDes&#39; :sel=&#39;selected&#39; :key=&quot;item.index&quot;&gt; &lt;img :src=&quot;item.normalImg&quot; slot=&#39;normalImg&#39;&gt; &lt;img :src=&quot;item.activeImg&quot; slot=&#39;activeImg&#39;&gt; &lt;/Item&gt; &lt;/div&gt; &lt;/div&gt; &lt;/template&gt; &lt;script type=&quot;text/javascript&quot;&gt; import Item from &#39;.">
+<meta itemprop="datePublished" content="2020-06-30T13:59:25&#43;08:00" />
+<meta itemprop="dateModified" content="2020-06-30T13:59:25&#43;08:00" />
+<meta itemprop="wordCount" content="210">
+
+
+
+<meta itemprop="keywords" content="vue," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vue学习"/>
+<meta name="twitter:description" content="vue父子通信 tabbar案例 底部导航组件封装包括 &lt;Tabbar&gt;(父)、&lt;Item&gt;(子)
+需求：
+点击导航组件里代表每个模块的按钮使上方展示不同模块的内容
+步骤：
+1.在App.vue里注册 Tabbar组件和各个页面组件,
+&lt;script&gt; import Tabbar from &#39;./components/comm/tabbar/Tabbar&#39; import Home from &#39;./views/Home&#39; import News from &#39;./views/News&#39; import Myself from &#39;./views/Myself&#39; export default { components:{ Tabbar, Home, News, Myself } } &lt;/script&gt; 2.新建Tabbar.vue和Item.vue
+Tabbar.vue
+Tabbar里注册Item组件，通过:属性名向Item组件传递需要的数据（item的下标文案txt、激活图标、未激活图标）
+&lt;template&gt; &lt;div class=&quot;tabberWarp&quot; &gt; &lt;div class=&quot;warp&quot;&gt; &lt;Item :txt=&#39;item.txt&#39; :page=&#39;item.page&#39; @change=&#39;getVal&#39; v-for=&#39;item in tabbarDes&#39; :sel=&#39;selected&#39; :key=&quot;item.index&quot;&gt; &lt;img :src=&quot;item.normalImg&quot; slot=&#39;normalImg&#39;&gt; &lt;img :src=&quot;item.activeImg&quot; slot=&#39;activeImg&#39;&gt; &lt;/Item&gt; &lt;/div&gt; &lt;/div&gt; &lt;/template&gt; &lt;script type=&quot;text/javascript&quot;&gt; import Item from &#39;."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">wazanHub</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">wazanHub</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Vue学习</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-06-30 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 学习笔记 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vue父子通信">vue父子通信</a>
+      <ul>
+        <li><a href="#tabbar案例">tabbar案例</a></li>
+        <li><a href="#总结">总结</a></li>
+      </ul>
+    </li>
+    <li><a href="#插槽slot">插槽slot</a></li>
+    <li><a href="#vue操作dom元素">vue操作DOM元素</a></li>
+    <li><a href="#vue操作dom元素-1">vue操作DOM元素</a></li>
+    <li><a href="#vue-router">vue-router</a></li>
+    <li><a href="#vuex">vuex</a></li>
+    <li><a href="#vue注意点">vue注意点</a>
+      <ul>
+        <li><a href="#v-if和v-show区别">v-if和v-show区别</a></li>
+        <li><a href="#图片的引入">图片的引入</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="vue父子通信">vue父子通信</h2>
+<h3 id="tabbar案例">tabbar案例</h3>
+<p>底部导航组件封装包括  <code>&lt;Tabbar&gt;</code>(父)、<code>&lt;Item&gt;</code>(子)</p>
+<p><strong>需求</strong>：<br>
+点击导航组件里代表每个模块的按钮使上方展示不同模块的内容<br>
+<strong>步骤</strong>：<br>
+1.在App.vue里注册 Tabbar组件和各个页面组件,</p>
+<pre><code>&lt;script&gt;
+import Tabbar from './components/comm/tabbar/Tabbar'
+import Home from './views/Home'
+import News from './views/News'
+import Myself from './views/Myself'
+export default {
+  components:{
+    Tabbar,
+    Home,
+    News,
+    Myself
+  }
+}
+&lt;/script&gt;
+</code></pre><p>2.新建Tabbar.vue和Item.vue<br>
+Tabbar.vue<br>
+Tabbar里注册Item组件，通过<code>:属性名</code>向Item组件传递需要的数据（item的下标文案txt、激活图标、未激活图标）</p>
+<pre><code>&lt;template&gt;
+	&lt;div class=&quot;tabberWarp&quot; &gt;
+		&lt;div class=&quot;warp&quot;&gt;
+			&lt;Item :txt='item.txt' :page='item.page' @change='getVal' v-for='item in tabbarDes' :sel='selected' :key=&quot;item.index&quot;&gt;
+				&lt;img :src=&quot;item.normalImg&quot; slot='normalImg'&gt;
+				&lt;img :src=&quot;item.activeImg&quot; slot='activeImg'&gt;
+			&lt;/Item&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/template&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+	import Item from './Item'
+	export default{
+		components:{
+			Item
+		},
+		data:function(){
+			return{
+				selected:'',
+				tabbarDes:[
+					{
+						txt:'主页',
+						page:'home',
+						normalImg:require('../../../assets/images/home.png'),
+					    activeImg:require('../../../assets/images/home_act.png')
+                    },
+                    {
+						txt:'新闻列表',
+						page:'news',
+						normalImg:require('../../../assets/images/news.png'),
+					    activeImg:require('../../../assets/images/news_act.png')
+                    },		
+                    {
+						txt:'个人中心',
+						page:'myself',
+						normalImg:require('../../../assets/images/my.png'),
+					    activeImg:require('../../../assets/images/my_act.png')
+					}
+				]
+			}
+		},
+		methods:{
+			getVal:function(res){
+				this.selected = res;
+			}
+		},
+		mounted(){
+			this.getVal('home')
+		}
+	}
+&lt;/script&gt;
+</code></pre><p>Item.vue<br>
+Item通过<code>props:{}</code>属性里来声明一个自己的属性，用来从父组件取下相应属性的值</p>
+<pre><code>&lt;template&gt;
+	&lt;div class=&quot;itemWarp&quot; @click='changePage'&gt;
+		&lt;span v-show='!bol'&gt;
+			&lt;slot name='normalImg'&gt;&lt;/slot&gt;
+		&lt;/span&gt;
+		&lt;span v-show='bol'&gt;
+			&lt;slot name='activeImg'&gt;&lt;/slot&gt;
+		&lt;/span&gt;
+		&lt;span v-text='txt' :class=&quot;{act:bol}&quot;&gt;&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+	export default{
+		name: 'Item',
+		props:{
+			txt:{
+				type:String
+			},
+			page:{
+				type:String
+			},
+			sel:{
+				type:String
+			}
+		},
+		computed:{
+			bol: function(){
+				if(this.sel == this.page){
+					return true;
+				}
+				return false;
+			}
+		},
+		methods:{
+			changePage:function(){
+				//点击跳转对应的页面
+				this.$router.push('/'+this.page);
+				this.$emit('change',this.page)
+			}
+		}
+	}
+&lt;/script
+</code></pre><p>3.通过点击Item来跳转路由，还有需要通过父组件Tabbar去改变其他兄弟Item的样式变化<br>
+子组件通过点击事件 <code>@click='changePage'</code> 里的</p>
+<pre><code>this.$emit('change',this.page)
+</code></pre><p>告诉Tabbar去处理定义好的<code>getVal()</code>，<br>
+改变了selected（所有子组件Item都拥有，且值相同）,<br>
+Tabbar再通过<code>props:{}</code>改变selected, <br>
+引起Item的bol属性的变化来控制样式<br>
+(这里可能你认为可以在Item里控制自己样式的变化就行，但这样却不能使兄弟组件的激活样式发生改变，所以要通过父子通信)</p>
+<pre><code>getVal:function(res){
+    this.selected = res;
+}
+</code></pre><p><a href="#">demo gitHub</a></p>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="总结">总结</h3>
+<p><code>父子组件之间的通信就是 props down,events up，   父组件通过 属性props向下传递数据给子组件，   子组件通过 事件events 给父组件发送消息。</code><br>
+比如，子组件需要某个数据，就在内部定义一个prop属性，然后父组件就像给html元素指定特性值一样，把自己的data属性传递给子组件的这个属性。<br>
+而当子组件内部发生了什么事情的时候，就通过自定义事件来把这个事情涉及到的数据暴露出来，供父组件处理。</p>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="插槽slot">插槽slot</h2>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="vue操作dom元素">vue操作DOM元素</h2>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="vue操作dom元素-1">vue操作DOM元素</h2>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="vue-router">vue-router</h2>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="vuex">vuex</h2>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h2 id="vue注意点">vue注意点</h2>
+<h3 id="v-if和v-show区别">v-if和v-show区别</h3>
+<p><!-- raw HTML omitted --> <!-- raw HTML omitted --></p>
+<h3 id="图片的引入">图片的引入</h3>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">wazan</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2020-06-30
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/vue/">vue</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%90%86%E8%A7%A3/">
+            <span class="next-text nav-default">设计模式的理解</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">wazan</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

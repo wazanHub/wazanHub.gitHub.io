@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>webpack on wazanHub</title>
+<<<<<<< HEAD
+    <link>https://wazanhub.github.io/tags/webpack/</link>
+=======
+<<<<<<< HEAD
+    <link>https://wazanhub.github.io/tags/webpack/</link>
+=======
+    <link>http://localhost:1313/tags/webpack/</link>
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    <description>Recent content in webpack on wazanHub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 27 Jun 2020 11:43:48 +0800</lastBuildDate>
+    
+<<<<<<< HEAD
+	<atom:link href="https://wazanhub.github.io/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
+=======
+<<<<<<< HEAD
+	<atom:link href="https://wazanhub.github.io/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
+=======
+	<atom:link href="http://localhost:1313/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+    
+    
+    <item>
+      <title>webpack简单入门</title>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> index 0802 commit
+      <link>https://wazanhub.github.io/post/webpack/</link>
+      <pubDate>Sat, 27 Jun 2020 11:43:48 +0800</pubDate>
+      
+      <guid>https://wazanhub.github.io/post/webpack/</guid>
+      <description>使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&amp;gt;webpack.config.js // 配置文件 webpack配置 配置入口 webpack.config.js里配置文件
+<<<<<<< HEAD
+=======
+=======
+      <link>http://localhost:1313/post/webpack/</link>
+      <pubDate>Sat, 27 Jun 2020 11:43:48 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/webpack/</guid>
+      <description>使用webpack的好处 目录构建 webpack init -y // 初始化 npm i webpack -D // 开发环境安装webpack mkdir src //创建相关开发目录及入口文件 .&amp;gt;webpack.config.js // 配置文件 webpack基础配置 配置入口 webpack.config.js里配置文件
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
+entry: { app1:path.join(__dirname, &#39;src/js/app1.js&#39;), app2:path.join(__dirname, &#39;src/js/app2.js&#39;) }, output: { path: path.join(__dirname, &#39;dist&#39;), filename: &#39;[name].bundle.js?[hash:5]&#39; }, module:{}, plugins:[] 开发环境部署服务 安装webpack-dev-server
+npm i webpack-dev-server -D 配置启动命令
+法一：package.json文件里配置
+&amp;quot;dev&amp;quot;: &amp;quot;webpack-dev-server --open --port 3000 --contentBase src --hot&amp;quot;, 法二：在webpack.config.js里配置
+devServer: { contentBase: &#39;src&#39;, // 指定托管的根目录 inline: true, // 自动刷新 hot: true, // 启动热更新 port: 5000, // 设置启动的时候的运行端口 open: true // 自动打开开浏览器 } webpack.</description>
+    </item>
+    
+  </channel>
+</rss>

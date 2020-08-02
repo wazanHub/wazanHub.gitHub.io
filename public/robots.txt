@@ -1,0 +1,10 @@
+User-agent: *
+<<<<<<< HEAD
+Sitemap: https://wazanhub.github.io/sitemap.xml
+=======
+<<<<<<< HEAD
+Sitemap: https://wazanhub.github.io/sitemap.xml
+=======
+Sitemap: http://localhost:1313/sitemap.xml
+>>>>>>> index 0802 commit
+>>>>>>> index 0802 commit
